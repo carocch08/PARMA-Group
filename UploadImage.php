@@ -1,6 +1,4 @@
 <?php
-// En versiones de PHP anteriores a la 4.1.0, debería utilizarse $HTTP_POST_FILES en lugar
-// de $_FILES.
 
 $dir_subida = 'C:\wamp\www\PARMA-Group\Imagenes';
 $fichero_subido = $dir_subida . basename($_FILES['fichero_usuario']['name']);
