@@ -10,15 +10,15 @@ function guassianFilter($image, $L, $K, $x, $y)
 	
 	$alpha = alphaCalculus($K, $L);
 	
-	$res = ((1/$alpha) * $calculus);
 	
 	for ($u; $u <= $finU; $u++)
 	{
 		for ($v; $v <= $finV; $v++)
 		{
-			$calculus = $image[$u][$v] * FCalculus($x-$u, $y-$v); 
+			$calculus += $image[$u][$v] * FCalculus($x-$u, $y-$v); 
 		}
 	}
+	$res = ((1/$alpha) * $calculus);
 	echo $res;
 }
 
