@@ -41,5 +41,4 @@ function alphaCalculus($K, $L)
 	}
 }
 
-alphaCalculus(3,4);
 ?>
